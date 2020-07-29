@@ -1,5 +1,7 @@
 # Install NGINX Ingress Controller
 
+- Needed for k8s deployment (used instead of the nginx reverse proxy)
+
 https://kubernetes.github.io/ingress-nginx/
 
 - NGINX Ingress Controller will be installed in the `ingress-nginx` namespace
