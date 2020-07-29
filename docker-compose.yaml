@@ -1,0 +1,17 @@
+version: "3"
+services:
+  client:
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: ./server
+  nginx:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "8080:80"
